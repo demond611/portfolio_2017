@@ -1,0 +1,9 @@
+{
+  "name": "rw_2017",
+  "version": "1.0.0",
+  "homepage": "https://github.com/demond611/portfolio_2017#readme",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0"
+  }
+}
