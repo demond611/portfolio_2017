@@ -5,4 +5,9 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	color: #333;
+	background: $navColor;
+}
+
+a {
+	color: $mainOrange;
 }

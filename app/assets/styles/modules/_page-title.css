@@ -1,0 +1,30 @@
+.page-title {
+
+	background: $mainBlue;
+	text-align: left;
+	color: white;
+
+	&__text-content {
+		margin: 40px 0;
+	}
+
+	h1 {
+		font-size: 2rem;
+
+		@mixin atSmall {
+			font-size: 3rem;
+			text-align: center;
+		}
+	}
+
+	h2 {
+		font-size: 1.1rem;
+		font-weight: 300;
+
+		@mixin atSmall {
+			font-size: 2rem;
+			text-align: center;
+		}
+	}
+
+}

@@ -1,0 +1,47 @@
+.page-content {
+
+	background: white;
+
+	&__text-content {
+		margin: 25px 0;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		text-align: left;
+
+		@mixin atSmall {
+			text-align: center;
+		}
+
+		@mixin clearfix;
+	}
+
+	li {
+		list-style: none;
+		display: inline-block;
+	}
+
+	a {
+		color: $navText;
+		text-decoration: none;
+	}
+
+	&__site-list {
+		font-size: 1.3rem;
+		margin-bottom: 20px;
+
+		a > span {
+			margin-right: .5rem;
+			margin-left: .5rem;
+		}
+
+		@mixin atSmall {
+			margin-bottom: 0;
+			margin-right: 1.25rem;
+			margin-left: 1.25rem;
+		}
+	}
+
+}
