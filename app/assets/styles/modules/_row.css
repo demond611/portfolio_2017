@@ -14,7 +14,7 @@
     &__col-3 {
         width: 100%;
 
-        @mixin atSmall {
+        @mixin atMedium {
             width: 25%;
         }
     }
@@ -30,17 +30,13 @@
     &__col-6 {
         width: 100%;
 
-        @mixin atSmall {
+        @mixin atMedium {
             width: 50%;
         }
     }
 
     &--margin-top-20 {
-        margin-top: 0;
-
-        @mixin atSmall {
-            margin-top: 20px;
-        }
+        margin-top: 20px;
     }
 
 }

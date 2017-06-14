@@ -661,7 +661,7 @@ a {
         width: 100%;
     }
 
-@media (min-width: 568px) {
+@media (min-width: 800px){
 
 .row__col-3 {
             width: 25%
@@ -683,7 +683,7 @@ a {
         width: 100%;
     }
 
-@media (min-width: 568px) {
+@media (min-width: 800px){
 
 .row__col-6 {
             width: 50%
@@ -691,15 +691,8 @@ a {
 	}
 
 .row--margin-top-20 {
-        margin-top: 0;
+        margin-top: 20px;
     }
-
-@media (min-width: 568px) {
-
-.row--margin-top-20 {
-            margin-top: 20px
-    }
-	}
 
 .generic-content p {
 		font-weight: 400;
