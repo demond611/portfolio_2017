@@ -1,6 +1,19 @@
 .page-misc {
 
-	background: red;
-	padding: 2.5em 0;
+	background: #edd0ab;
+	padding: 1.5em 0;
+
+	&__text-content {
+		padding: 10px;
+	}
+
+	&__misc-image {
+		text-align: center;
+	}
+
+	&__header {
+		text-align: center;
+		font-size: 1.4rem;
+	}
 
 }

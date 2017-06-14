@@ -1,0 +1,30 @@
+.row {
+
+	@mixin clearfix;
+
+	width: 100%;
+
+	[class*='col-'] {
+        float: left;
+        min-height: 1px;
+        /*-- our gutter --*/
+        padding: 12px;
+    }
+
+    /*&__col-4 {
+        width: 100%;
+
+        @mixin atSmall {
+        	width: 33.33%;
+        }
+    }*/
+
+    &__col-6 {
+        width: 100%;
+
+        @mixin atSmall {
+            width: 50%;
+        }
+    }
+
+}

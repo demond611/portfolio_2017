@@ -492,7 +492,7 @@ a {
 @media (min-width: 568px) {
 
 .primary-nav {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 		float: right
 
 }
@@ -600,6 +600,7 @@ a {
 .page-content__site-list {
 		font-size: 1.3rem;
 		margin-bottom: 20px;
+		width: 100%;
 	}
 
 .page-content__site-list a > span {
@@ -612,16 +613,86 @@ a {
 .page-content__site-list {
 			margin-bottom: 0;
 			margin-right: 1.25rem;
-			margin-left: 1.25rem
+			margin-left: 1.25rem;
+			width: initial
 	}
 	}
 
 .page-misc {
 
-	background: red;
-	padding: 2.5em 0;
+	background: #edd0ab;
+	padding: 1.5em 0;
 
 }
+
+.page-misc__text-content {
+		padding: 10px;
+	}
+
+.page-misc__misc-image {
+		text-align: center;
+	}
+
+.page-misc__header {
+		text-align: center;
+		font-size: 1.4rem;
+	}
+
+.row {
+
+	width: 100%;
+
+}
+
+.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+.row [class*='col-'] {
+        float: left;
+        min-height: 1px;
+        /*-- our gutter --*/
+        padding: 12px;
+    }
+
+/*&__col-4 {
+        width: 100%;
+
+        @mixin atSmall {
+        	width: 33.33%;
+        }
+    }*/
+
+.row__col-6 {
+        width: 100%;
+    }
+
+@media (min-width: 568px) {
+
+.row__col-6 {
+            width: 50%
+    }
+	}
+
+.generic-content p {
+		font-weight: 400;
+		line-height: 1.65;
+		margin: 0;
+	}
+
+@media (min-width: 568px) {
+
+.generic-content p {
+			font-size: 1.125rem;
+			margin: 0 0 1.8rem 0
+	}
+	}
+
+.generic-content p a {
+		font-weight: 700;
+	}
 
 .site-footer {
 
