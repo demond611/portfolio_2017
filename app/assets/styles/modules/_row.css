@@ -11,19 +11,35 @@
         padding: 12px;
     }
 
-    /*&__col-4 {
+    &__col-3 {
+        width: 100%;
+
+        @mixin atSmall {
+            width: 25%;
+        }
+    }
+
+    &__col-4 {
         width: 100%;
 
         @mixin atSmall {
         	width: 33.33%;
         }
-    }*/
+    }
 
     &__col-6 {
         width: 100%;
 
         @mixin atSmall {
             width: 50%;
+        }
+    }
+
+    &--margin-top-20 {
+        margin-top: 0;
+
+        @mixin atSmall {
+            margin-top: 20px;
         }
     }
 

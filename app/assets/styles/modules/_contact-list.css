@@ -1,0 +1,42 @@
+.contact-list {
+
+	width: 100%;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+
+		@mixin clearfix;
+	}
+
+	li {
+		list-style: none;
+		display: inline-block;
+	}
+
+	a {
+		color: black;
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	&__item {
+		font-size: 1.3rem;
+		margin-bottom: 20px;
+		width: 100%;
+
+		a > span {
+			margin-right: .5rem;
+			margin-left: .5rem;
+		}
+
+		@mixin atSmall {
+			margin-bottom: 0;
+			margin-right: 2.25rem;
+			margin-left: 1.25rem;
+			width: initial;
+		}
+	}
+	
+}

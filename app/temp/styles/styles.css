@@ -657,13 +657,27 @@ a {
         padding: 12px;
     }
 
-/*&__col-4 {
+.row__col-3 {
         width: 100%;
+    }
 
-        @mixin atSmall {
-        	width: 33.33%;
-        }
-    }*/
+@media (min-width: 568px) {
+
+.row__col-3 {
+            width: 25%
+    }
+	}
+
+.row__col-4 {
+        width: 100%;
+    }
+
+@media (min-width: 568px) {
+
+.row__col-4 {
+        	width: 33.33%
+    }
+	}
 
 .row__col-6 {
         width: 100%;
@@ -673,6 +687,17 @@ a {
 
 .row__col-6 {
             width: 50%
+    }
+	}
+
+.row--margin-top-20 {
+        margin-top: 0;
+    }
+
+@media (min-width: 568px) {
+
+.row--margin-top-20 {
+            margin-top: 20px
     }
 	}
 
@@ -692,6 +717,56 @@ a {
 
 .generic-content p a {
 		font-weight: 700;
+	}
+
+.contact-list {
+
+	width: 100%;
+	
+}
+
+.contact-list ul {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+.contact-list ul::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+.contact-list li {
+		list-style: none;
+		display: inline-block;
+	}
+
+.contact-list a {
+		color: black;
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+.contact-list__item {
+		font-size: 1.3rem;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+.contact-list__item a > span {
+			margin-right: .5rem;
+			margin-left: .5rem;
+		}
+
+@media (min-width: 568px) {
+
+.contact-list__item {
+			margin-bottom: 0;
+			margin-right: 2.25rem;
+			margin-left: 1.25rem;
+			width: initial
+	}
 	}
 
 .site-footer {
