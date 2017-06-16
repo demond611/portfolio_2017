@@ -22,7 +22,7 @@
     &__col-4 {
         width: 100%;
 
-        @mixin atSmall {
+        @mixin atMedium {
         	width: 33.33%;
         }
     }
@@ -35,8 +35,20 @@
         }
     }
 
+    &__col-8 {
+        width: 100%;
+
+        @mixin atMedium {
+            width: 66.6666666667%;
+        }
+    }
+
     &--margin-top-20 {
         margin-top: 20px;
+    }
+
+    &--margin-bottom-20 {
+        margin-bottom: 20px;
     }
 
 }
