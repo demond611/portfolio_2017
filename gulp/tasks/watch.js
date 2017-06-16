@@ -12,7 +12,7 @@ gulp.task('watch', function(){
 		}
 	});
 
-	watch('./app/index.html', function(){
+	watch(['./app/index.html', './app/about-me.html'], function(){
 		browserSync.reload();
 	});
 

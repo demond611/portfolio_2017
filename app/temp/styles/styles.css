@@ -460,6 +460,10 @@ body {
 	background: #ECECEC;
 }
 
+img {
+	max-width: 100%;
+}
+
 a {
 	color: #d59541;
 }
@@ -553,9 +557,15 @@ a {
 @media (min-width: 568px) {
 
 .page-title h2 {
-			font-size: 2rem;
+			font-size: 1.8rem;
 			text-align: center
 	}
+	}
+
+.page-title--narrow-title {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 .page-content {
@@ -566,6 +576,19 @@ a {
 
 .page-content__text-content {
 		margin: 25px 0;
+	}
+
+.page-content--narrow-content {
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+@media (min-width: 568px) {
+
+.page-content--narrow-content {
+			max-width: 80%
+	}
 	}
 
 .page-content ul {
@@ -616,6 +639,14 @@ a {
 			margin-left: 1.25rem;
 			width: initial
 	}
+	}
+
+.page-content__photo {
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 0 auto;
+		width: 200px;
+		height: 200px;
 	}
 
 .page-misc {
@@ -672,7 +703,7 @@ a {
         width: 100%;
     }
 
-@media (min-width: 568px) {
+@media (min-width: 800px){
 
 .row__col-4 {
         	width: 33.33%
@@ -690,21 +721,35 @@ a {
     }
 	}
 
+.row__col-8 {
+        width: 100%;
+    }
+
+@media (min-width: 800px){
+
+.row__col-8 {
+            width: 66.6666666667%
+    }
+	}
+
 .row--margin-top-20 {
         margin-top: 20px;
+    }
+
+.row--margin-bottom-20 {
+        margin-bottom: 20px;
     }
 
 .generic-content p {
 		font-weight: 400;
 		line-height: 1.65;
-		margin: 0;
+		margin: 0 0 1.8rem 0;
 	}
 
 @media (min-width: 568px) {
 
 .generic-content p {
-			font-size: 1.125rem;
-			margin: 0 0 1.8rem 0
+			font-size: 1.125rem
 	}
 	}
 
