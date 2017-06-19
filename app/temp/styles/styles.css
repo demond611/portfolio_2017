@@ -847,6 +847,12 @@ a {
 		border-radius: 3px;
 	}
 
+.work-feature span {
+		font-size: smaller;
+		font-weight: 500;
+		font-style: italic;
+	}
+
 .work-feature a {
 		text-decoration: underline;
 		font-weight: 500;

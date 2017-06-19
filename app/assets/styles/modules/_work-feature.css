@@ -9,6 +9,12 @@
 		border-radius: 3px;
 	}
 
+	span {
+		font-size: smaller;
+		font-weight: 500;
+		font-style: italic;
+	}
+
 	a {
 		text-decoration: underline;
 		font-weight: 500;
