@@ -3,12 +3,13 @@
 @import "base/_mixins";
 @import "base/_global";
 @import "modules/_wrapper";
+@import "modules/_generic-content";
 @import "modules/_site-header";
 @import "modules/_primary-nav";
 @import "modules/_page-title";
 @import "modules/_page-content";
 @import "modules/_page-misc";
 @import "modules/_row";
-@import "modules/_generic-content";
 @import "modules/_contact-list";
+@import "modules/_work-feature";
 @import "modules/_site-footer";
