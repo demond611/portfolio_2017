@@ -3,13 +3,17 @@
 	padding: 10px 0;
 	font-size: 1rem;
 	font-weight: 400;
+	text-align: center;
 
 	@mixin atSmall {
 		font-size: 1.2rem;
 	}
 
 	&--pull-right {
-		float: right;
+
+		@mixin atSmall {
+			float: right;
+		}
 	}
 	
 	ul {
@@ -22,8 +26,21 @@
 
 	li {
 		list-style: none;
-		padding-right: 20px;
-		float: left;
+		padding-right: 35px;
+		display: inline-block;
+
+		@mixin atSmall {
+			float: left;
+			display: block;
+		}
+	}
+
+	li:last-child {
+		padding-right: 0;
+
+		@mixin atSmall {
+			padding-right: 35px;
+		}
 	}
 
 	a {

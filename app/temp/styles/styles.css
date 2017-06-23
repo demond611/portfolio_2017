@@ -522,12 +522,14 @@ a {
 
 .site-header__menu-content {
 		display: none;
+		padding-top: 30px;
 	}
 
 @media (min-width: 568px) {
 
 .site-header__menu-content {
-			display: block
+			display: block;
+			padding-top: 0
 	}
 	}
 
@@ -536,8 +538,8 @@ a {
 		}
 
 .site-header__menu-icon {
-		width: 20px;
-		height: 20px;
+		width: 25px;
+		height: 25px;
 		background: white;
 		position: absolute;
 		left: 50%;
@@ -569,6 +571,7 @@ a {
 	padding: 10px 0;
 	font-size: 1rem;
 	font-weight: 400;
+	text-align: center;
 
 }
 
@@ -580,8 +583,11 @@ a {
 }
 	}
 
+@media (min-width: 568px) {
+
 .primary-nav--pull-right {
-		float: right;
+			float: right
+	}
 	}
 
 .primary-nav ul {
@@ -598,8 +604,27 @@ a {
 
 .primary-nav li {
 		list-style: none;
-		padding-right: 20px;
-		float: left;
+		padding-right: 35px;
+		display: inline-block;
+	}
+
+@media (min-width: 568px) {
+
+.primary-nav li {
+			float: left;
+			display: block
+	}
+	}
+
+.primary-nav li:last-child {
+		padding-right: 0;
+	}
+
+@media (min-width: 568px) {
+
+.primary-nav li:last-child {
+			padding-right: 35px
+	}
 	}
 
 .primary-nav a {
@@ -873,7 +898,7 @@ a {
 	}
 
 .contact-list a {
-		color: black;
+		color: #333;
 		text-decoration: none;
 		font-weight: 500;
 	}
