@@ -509,6 +509,17 @@ a {
 		background: rgba(255, 0, 0, .5);
 	}
 
+.site-header--hide-on-mobile {
+		display: none;
+	}
+
+@media (min-width: 568px) {
+
+.site-header--hide-on-mobile {
+			display: block
+	}
+	}
+
 .site-header__menu-content {
 		display: none;
 	}
@@ -519,6 +530,10 @@ a {
 			display: block
 	}
 	}
+
+.site-header__menu-content--is-visible {
+			display: block;
+		}
 
 .site-header__menu-icon {
 		width: 20px;

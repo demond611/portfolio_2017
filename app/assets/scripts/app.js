@@ -1,8 +1,3 @@
-var $ = require('jquery');
-import Person from './modules/Person';
+import MobileMenu from './modules/MobileMenu';
 
-
-
-
-var rob = new Person("Robert", "red");
-rob.greet();
+var mobileMenu = new MobileMenu();

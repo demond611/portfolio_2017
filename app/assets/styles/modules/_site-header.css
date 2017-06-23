@@ -12,10 +12,22 @@
 		background: rgba(255, 0, 0, .5);
 	}
 
+	&--hide-on-mobile {
+		display: none;
+
+		@mixin atSmall {
+			display: block;
+		}
+	}
+
 	&__menu-content {
 		display: none;
 
 		@mixin atSmall {
+			display: block;
+		}
+
+		&--is-visible {
 			display: block;
 		}
 	}
