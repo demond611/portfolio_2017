@@ -6,6 +6,9 @@
 
 	@mixin atSmall {
 		font-size: 1.2rem;
+	}
+
+	&--pull-right {
 		float: right;
 	}
 	
@@ -19,13 +22,13 @@
 
 	li {
 		list-style: none;
-		display: inline-block;
+		padding-right: 20px;
+		float: left;
 	}
 
 	a {
 		color: $navText;
 		text-decoration: none;
-		padding: 10px;
 	}
 
 }
