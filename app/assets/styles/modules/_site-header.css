@@ -1,5 +1,111 @@
 .site-header {
 
-	background: $navColor;
+	&__site-logo {
+		font-size: 2.5rem;
+		text-shadow: 2px 2px #a76f25;
+		color: $mainOrange;
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		transform: rotate(45deg);
+		margin-top: 13px;
+		background: rgba(255, 0, 0, .5);
+	}
+
+	&--hide-on-mobile {
+		display: none;
+
+		@mixin atSmall {
+			display: block;
+		}
+	}
+
+	&__menu-content {
+		display: none;
+		padding-top: 30px;
+
+		@mixin atSmall {
+			display: block;
+			padding-top: 0;
+		}
+
+		&--is-visible {
+			display: block;
+		}
+	}
+
+	&__menu-icon {
+		width: 30px;
+		height: 19px;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+		margin-top: 4px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 30px;
+			height: 3px;
+			background: white;
+			transform-origin: 0 0;
+			transition: opacity .3s ease-out;
+		}
+
+		&__middle {
+			position: absolute;
+			top: 8px;
+			left: 0;
+			width: 30px;
+			height: 3px;
+			background: white;
+			transition: all .3s ease-out;
+			transform-origin: 0 50%;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 30px;
+			height: 3px;
+			background: white;
+			transform-origin: 0 100%;
+			transition: transform .3s ease-out;
+		}
+
+		@mixin atSmall {
+			display: none;
+		}
+	}
+
+	&__menu-icon--close-x {
+		&::before {
+			transform: rotate(45deg) scaleX(.85);
+			background: $mainBlue;
+		}
+		.site-header__menu-icon__middle {
+			opacity: 0;
+			transform: scaleX(0);
+		}
+		&::after {
+			transform: rotate(-45deg) scaleX(.85) translateY(1px);
+			background: $mainBlue;
+		}
+	}
+
+	h6 {
+		margin: 15px auto 0;
+		text-align: center;
+		transform: rotate(-45deg);
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
 
 }
