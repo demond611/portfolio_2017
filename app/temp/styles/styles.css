@@ -497,26 +497,43 @@ a {
 	}
 
 .site-header__site-logo {
-		font-size: 2.5rem;
+		font-size: 2rem;
 		text-shadow: 2px 2px #a76f25;
-		color: #d59541;
-		width: 60px;
-		height: 60px;
+		width: 45px;
+		height: 45px;
 		position: absolute;
 		-webkit-transform: rotate(45deg);
 		        transform: rotate(45deg);
 		margin-top: 13px;
 		background: rgba(255, 0, 0, .5);
+		z-index: 5;
+	}
+
+.site-header__scroll {
+		font-size: 2rem;
+		text-shadow: 2px 2px #a76f25;
+		color: white;
+		width: 45px;
+		height: 45px;
+		position: fixed;
+		-webkit-transform: rotate(45deg);
+		        transform: rotate(45deg);
+		margin-top: 13px;
+		background: rgba(255, 0, 0, .5);
+		cursor: pointer;
+		z-index: 1;
 	}
 
 .site-header--hide-on-mobile {
-		display: none;
+		/*display: none;*/
+		opacity: 0;
 	}
 
 @media (min-width: 568px) {
 
 .site-header--hide-on-mobile {
-			display: block
+			/*display: block;*/
+			opacity: 1
 	}
 	}
 
@@ -616,7 +633,7 @@ a {
 		}
 
 .site-header h6 {
-		margin: 15px auto 0;
+		margin: 10px auto 0;
 		text-align: center;
 		-webkit-transform: rotate(-45deg);
 		        transform: rotate(-45deg);
