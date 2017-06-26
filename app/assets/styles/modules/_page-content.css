@@ -32,6 +32,10 @@
 		font-size: 1rem;
 	}
 
+	&__resume-section p {
+		font-size: 1rem;
+	}
+
 	ul {
 		margin: 0;
 		padding: 0;
