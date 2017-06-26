@@ -1,15 +1,38 @@
 .site-header {
 
 	&__site-logo {
-		font-size: 2rem;
-		text-shadow: 2px 2px #a76f25;
-		width: 45px;
-		height: 45px;
+		font-size: 1.2rem;
+		width: 30px;
+		height: 30px;
 		position: absolute;
 		transform: rotate(45deg);
-		margin-top: 13px;
+		margin-top: 6px;
+		margin-left: -13px;
 		background: rgba(255, 0, 0, .5);
+		opacity: 1;
 		z-index: 5;
+
+		& a {
+			margin-left: 3px;
+		}
+
+		@mixin atSmall {
+			font-size: 2rem;
+			text-shadow: 2px 2px #a76f25;
+			width: 45px;
+			height: 45px;
+			position: absolute;
+			transform: rotate(45deg);
+			margin-top: 13px;
+			margin-left: 0;
+			background: rgba(255, 0, 0, .5);
+			opacity: 1;
+			z-index: 5;
+
+			& a {
+				margin-left: 0;
+			}
+		}
 	}
 
 	&__scroll {
@@ -23,16 +46,14 @@
 		margin-top: 13px;
 		background: rgba(255, 0, 0, .5);
 		cursor: pointer;
-		z-index: 1;
+		z-index: 0;
 	}
 
-	&--hide-on-mobile {
-		/*display: none;*/
-		opacity: 0;
+	&--scroll-hide-on-mobile {
+		display: none;
 
 		@mixin atSmall {
-			/*display: block;*/
-			opacity: 1;
+			display: block;
 		}
 	}
 
