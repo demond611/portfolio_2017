@@ -1,18 +1,55 @@
 .site-header {
 
 	&__site-logo {
-		font-size: 2.5rem;
-		text-shadow: 2px 2px #a76f25;
-		color: $mainOrange;
-		width: 60px;
-		height: 60px;
+		font-size: 1.2rem;
+		width: 30px;
+		height: 30px;
 		position: absolute;
+		transform: rotate(45deg);
+		margin-top: 6px;
+		margin-left: -13px;
+		background: rgba(255, 0, 0, .5);
+		opacity: 1;
+		z-index: 5;
+
+		& a {
+			margin-left: 3px;
+		}
+
+		@mixin atSmall {
+			font-size: 2rem;
+			text-shadow: 2px 2px #a76f25;
+			width: 45px;
+			height: 45px;
+			position: absolute;
+			transform: rotate(45deg);
+			margin-top: 13px;
+			margin-left: 0;
+			background: rgba(255, 0, 0, .5);
+			opacity: 1;
+			z-index: 5;
+
+			& a {
+				margin-left: 0;
+			}
+		}
+	}
+
+	&__scroll {
+		font-size: 2rem;
+		text-shadow: 2px 2px #a76f25;
+		color: white;
+		width: 45px;
+		height: 45px;
+		position: fixed;
 		transform: rotate(45deg);
 		margin-top: 13px;
 		background: rgba(255, 0, 0, .5);
+		cursor: pointer;
+		z-index: 0;
 	}
 
-	&--hide-on-mobile {
+	&--scroll-hide-on-mobile {
 		display: none;
 
 		@mixin atSmall {
@@ -98,7 +135,7 @@
 	}
 
 	h6 {
-		margin: 15px auto 0;
+		margin: 10px auto 0;
 		text-align: center;
 		transform: rotate(-45deg);
 	}

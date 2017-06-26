@@ -497,25 +497,67 @@ a {
 	}
 
 .site-header__site-logo {
-		font-size: 2.5rem;
-		text-shadow: 2px 2px #a76f25;
-		color: #d59541;
-		width: 60px;
-		height: 60px;
+		font-size: 1.2rem;
+		width: 30px;
+		height: 30px;
 		position: absolute;
+		-webkit-transform: rotate(45deg);
+		        transform: rotate(45deg);
+		margin-top: 6px;
+		margin-left: -13px;
+		background: rgba(255, 0, 0, .5);
+		opacity: 1;
+		z-index: 5;
+	}
+
+.site-header__site-logo a {
+			margin-left: 3px;
+		}
+
+@media (min-width: 568px) {
+
+.site-header__site-logo {
+			font-size: 2rem;
+			text-shadow: 2px 2px #a76f25;
+			width: 45px;
+			height: 45px;
+			position: absolute;
+			-webkit-transform: rotate(45deg);
+			        transform: rotate(45deg);
+			margin-top: 13px;
+			margin-left: 0;
+			background: rgba(255, 0, 0, .5);
+			opacity: 1;
+			z-index: 5
+	}
+
+			.site-header__site-logo a {
+				margin-left: 0;
+			}
+	}
+
+.site-header__scroll {
+		font-size: 2rem;
+		text-shadow: 2px 2px #a76f25;
+		color: white;
+		width: 45px;
+		height: 45px;
+		position: fixed;
 		-webkit-transform: rotate(45deg);
 		        transform: rotate(45deg);
 		margin-top: 13px;
 		background: rgba(255, 0, 0, .5);
+		cursor: pointer;
+		z-index: 0;
 	}
 
-.site-header--hide-on-mobile {
+.site-header--scroll-hide-on-mobile {
 		display: none;
 	}
 
 @media (min-width: 568px) {
 
-.site-header--hide-on-mobile {
+.site-header--scroll-hide-on-mobile {
 			display: block
 	}
 	}
@@ -616,7 +658,7 @@ a {
 		}
 
 .site-header h6 {
-		margin: 15px auto 0;
+		margin: 10px auto 0;
 		text-align: center;
 		-webkit-transform: rotate(-45deg);
 		        transform: rotate(-45deg);
@@ -707,13 +749,13 @@ a {
 
 .page-title h1 {
 		font-size: 2rem;
+		text-align: center;
 	}
 
 @media (min-width: 568px) {
 
 .page-title h1 {
-			font-size: 3rem;
-			text-align: center
+			font-size: 3rem
 	}
 	}
 

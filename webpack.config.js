@@ -2,10 +2,13 @@ const path = require('path'); // NEEDED FOR USING INSTALLED WEBPACK MODULE CORRE
 
 module.exports = {
 
-	entry: "./app/assets/scripts/app.js",
+	entry: {
+		app: "./app/assets/scripts/app.js",
+		Vendor: "./app/assets/scripts/Vendor.js"
+	},
 	output: {
 		path: path.resolve(__dirname, "./app/temp/scripts"),
-		filename: "app.js"
+		filename: "[name].js"
 	},
 	module: {
 		loaders: [

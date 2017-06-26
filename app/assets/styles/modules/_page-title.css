@@ -10,10 +10,10 @@
 
 	h1 {
 		font-size: 2rem;
+		text-align: center;
 
 		@mixin atSmall {
 			font-size: 3rem;
-			text-align: center;
 		}
 	}
 
