@@ -2,6 +2,28 @@
 
 	background: white;
 
+	li {
+		list-style: none;
+		display: inline-block;
+	}
+
+	a {
+		color: $navText;
+		text-decoration: none;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		text-align: left;
+
+		@mixin atSmall {
+			text-align: center;
+		}
+
+		@mixin clearfix;
+	}
+
 	&__text-content {
 		margin: 25px 0;
 	}
@@ -28,40 +50,21 @@
 		}
 	}
 
+	&__work-section {
+
+		a {
+			color: $mainOrange;
+			text-decoration: underline;
+		}
+		
+	}
+
 	&__work-section p {
 		font-size: 1rem;
 	}
 
 	&__resume-section p {
 		font-size: 1rem;
-	}
-
-	ul {
-		margin: 0;
-		padding: 0;
-		text-align: left;
-
-		@mixin atSmall {
-			text-align: center;
-		}
-
-		@mixin clearfix;
-	}
-
-	li {
-		list-style: none;
-		display: inline-block;
-	}
-
-	a {
-		color: $navText;
-		text-decoration: none;
-	}
-
-	&__work-section {
-		a {
-			color: $mainOrange;
-		}
 	}
 
 	&__site-list {
