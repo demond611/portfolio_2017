@@ -747,6 +747,17 @@ a {
 		margin: 40px 0;
 	}
 
+.page-title__text-content span {
+			font-size: .8rem;
+			font-style: italic;
+		}
+
+@media (min-width: 568px) {
+			.page-title__text-content span {
+				font-size: 1.1rem;
+			}
+	}
+
 .page-title h1 {
 		font-size: 2rem;
 		text-align: center;

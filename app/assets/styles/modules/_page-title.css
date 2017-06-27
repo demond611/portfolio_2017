@@ -6,6 +6,17 @@
 
 	&__text-content {
 		margin: 40px 0;
+
+		span {
+			font-size: .8rem;
+			font-style: italic;
+		}
+
+		@mixin atSmall {
+			span {
+				font-size: 1.1rem;
+			}
+		}
 	}
 
 	h1 {
